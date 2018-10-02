@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Terrivel</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="metodo">
+  <h1>Alimentador terrível</h1>
+  <h2> GET </h2>
+
+  <form action="http://terrivel.herokuapp.com/monster/" method="GET">
+    <label>Nome: <input name="nome" pattern="[A-Za-zç]{0,}"></input></label><br>
+    <label>Número de pedras: <input name="num_pedras"type="number" step="1" min="0" value="3"></label><br>
+    <label>Tamanho das pedras: <input name="tam_pedras"type="number" step="0.5" min="1" max="7"></label><br>
+    <label>Cor1: <input name="corCeu1" type="color"></input></label><br>
+    <label>Cor2: <input name="corCeu2" type="color"></input></label><br>
+    <label>Tipo das pedras: 
+      <select name="tipo_pedras">
+        <option value=""></option>
+        <option value="marroada">Marroada</option>
+        <option value="ametista">Ametista</option>
+        <option value="topazio">Topazio</option>
+        <option value="espinela">Espinela</option>
+      </select>
+    </label><br>
+    <label>Sortidas? <input name="tipo_pedras_sortidas" type="radio" value="sim">Sim <input name="tipo_pedras_sortidas" type="radio" value="nao">Não</input></label><br>
+    <button>Alimentar</button>
+    <button type="reset">Limpar</button>
+  </form> 
+  </div>
+
+   <div class="metodo">
+    <h2> POST </h2>
+   <form action="http://terrivel.herokuapp.com/monster/" method="POST">
+    <label>Nome: <input name="nome" pattern="[A-Za-zç]{0,}"></input></label><br>
+    <label>Número de pedras: <input name="num_pedras"type="number" step="1" min="0" value="3"></label><br>
+    <label>Tamanho das pedras: <input name="tam_pedras"type="number" step="0.5" min="1" max="7"></label><br>
+    <label>Cor1: <input name="corCeu1" type="color"></input></label><br>
+    <label>Cor2: <input name="corCeu2" type="color"></input></label><br>
+    <label>Tipo das pedras: 
+      <select name="tipo_pedras">
+        <option value=""></option>
+        <option value="marroada">Marroada</option>
+        <option value="ametista">Ametista</option>
+        <option value="topazio">Topazio</option>
+        <option value="espinela">Espinela</option>
+      </select>
+    </label><br>
+    <label>Sortidas? <input name="tipo_pedras_sortidas" type="radio" value="sim">Sim <input name="tipo_pedras_sortidas" type="radio" value="nao">Não</input></label><br>
+    <button>Alimentar</button>
+    <button type="reset">Limpar</button>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+body{
+	font-family: 'Helvetica';
+}
+
+form{
+	border-style: solid;
+	float: left;
+	padding: 20px;
+	display: table-cell;
+}
+
+.metodo{
+	display: inline-block;
+}
